@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Lao:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>hyperion</title>
+</head>
+
+<body class="index">
+    <main class="hero">
+        <div class="titulo">
+            <h1 data-heading="h" class="p-3">hyperion</h1>
+            <a class="buttom" id="start" role="button">enter</a>
+        </div>
+
+        <div id="tarjeta" class="presentacion" style="display: none;">
+            <h2>Ingrese datos de tripulante</h2>
+            <form id="form">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="Input1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">nombre y apellido</label>
+                    <input type="text" class="form-control" id="Input2"
+                        placeholder="nombre y apellido">
+                </div>
+                <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
+                <button type="button" class="btn btn-secondary" id="salir">Salir</button>
+            </form>
+        </div>
+        
+        <div id="tablaUsuario">
+
+        </div>
+
+        <footer>
+            <div class="redes">
+                <a href="https://github.com/nienanel?tab=repositories"> <img src="iconos/github.svg" class="iconos"
+                        alt="github"></a>
+                <a href="linkedin.com/in/emanuel-sones-555448267"> <img src="iconos/linkedin.svg" class="iconos"
+                        alt="linkedin"></a>
+                <a href="sonesemanuel@gmail.com"> <img src="iconos/envelopé.svg" alt="sobre" class="iconos"></a>
+                <a href="https://wa.me/549294466170"> <img src="iconos/whatsupp.svg" alt="telefono" class="iconos"></a>
+            </div>
+        </footer>
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

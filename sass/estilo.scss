@@ -1,0 +1,13 @@
+@import "mixin", "general","hero","tarjeta","footer";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.index {
+    background-image: url(../img/ross-128-b-2560x1440-planet-4k-16587.jpg);
+    background-position: center;
+    background-size: 140%;
+
+}
