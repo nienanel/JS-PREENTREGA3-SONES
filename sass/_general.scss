@@ -9,3 +9,14 @@
     background-size: 140%;
 
 }
+
+.home-index {
+    background-image: url(../img/fondo-espacio.jpg);
+
+    .tabla {
+        background-color: $secondary-color;
+        border: 2px solid $terciary-color;
+        border-radius: 7px;
+        width: 35rem;
+    }
+}
