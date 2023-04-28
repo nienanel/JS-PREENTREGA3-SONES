@@ -20,9 +20,9 @@
 
 <body class="home-index">
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Navbar</a>
+                <a class="navbar-brand" href="../index.html">hyperion</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -34,20 +34,20 @@
                             <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">inventario</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">encylopedia</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Dropdown link
+                                journal
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">quest</a></li>
+                                <li><a class="dropdown-item" href="#">map</a></li>
+                                <li><a class="dropdown-item" href="#">exit</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -56,8 +56,10 @@
         </nav>
     </header>
 
+    <!-- /// tabla de usuarios -->
     <div id="tablaUsuarios" class="tabla mt-5 ms-5 p-5"></div>
 
+    <!-- /// selector de planetas y listado -->
     <label for="tipoExoplaneta" class="mt-5">Tipo de Estrella:</label>
     <select id="tipoExoplaneta">
         <option value="">Seleccione un tipo de estrella</option>
@@ -67,8 +69,9 @@
     </select>
     <button id="buscar-planetas">Buscar</button>
 
-    <ul id="lista-planetas"></ul>
+    <ul id="lista-planetas" class="lista-planetas mt-5 me-5 md-5"></ul>
 
+    <!-- /// modal con info del exoplaneta -->
     <div id="myModal" class="modal">
         <div class="modal-content text-center">
             <span class="close">&times;</span>
@@ -76,9 +79,10 @@
         </div>
     </div>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>>
     <script src="../js/app2.js"></script>
     <script src="../model/class.js"></script>
     <script src="../js/app3.js"></script>

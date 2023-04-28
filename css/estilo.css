@@ -13,10 +13,28 @@
   background-image: url(../img/fondo-espacio.jpg);
 }
 .home-index .tabla {
-  background-color: #3F0071;
+  background-color: rgb(45, 45, 45);
   border: 2px solid #FB2576;
   border-radius: 7px;
-  width: 35rem;
+  width: 40rem;
+  color: white;
+}
+.home-index .tabla th {
+  text-align: left;
+  background-color: gray;
+  padding: 8px;
+  font-weight: bold;
+}
+.home-index .tabla td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.home-index .lista-planetas {
+  background-color: rgb(45, 45, 45);
+  color: #FB2576;
+  width: 50%;
+  border-radius: 10px;
+  font-family: "Train One", cursive;
 }
 
 .hero {
@@ -94,6 +112,14 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.navbar {
+  background-color: rgb(45, 45, 45);
+  display: flex;
+}
+.navbar .navbar-nav .nav-link {
+  color: #FB2576;
 }
 
 footer {

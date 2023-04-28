@@ -1,0 +1,11 @@
+.navbar {
+    background-color: $primary-color;
+    display: flex;
+    
+    .navbar-nav {
+
+        .nav-link {
+            color: $terciary-color;
+        }
+    }
+}

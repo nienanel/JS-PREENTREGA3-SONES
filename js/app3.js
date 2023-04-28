@@ -1,6 +1,27 @@
 let tipoExoplaneta = document.getElementById("tipoExoplaneta");
-const btnBuscarPlanetas = document.getElementById("buscar-planetas");
+let btnBuscarPlanetas = document.getElementById("buscar-planetas");
 const planetas = [exo1, exo2, exo3, exo4, exo5, exo6, exo7, exo8, exo9]
+const opciones = tipoExoplaneta.getElementsByTagName("option");
+
+/// style del drowpdown
+tipoExoplaneta.style.backgroundColor = "black";
+tipoExoplaneta.style.color = "#FB2576";
+
+for (let i = 0; i < opciones.length; i++) {
+    opciones[i].style.backgroundColor = "black";
+    opciones[i].style.color = "#FB2576";
+}
+
+/// efecto bton buscar planeta
+btnBuscarPlanetas.addEventListener("mouseover", () => {
+    btnBuscarPlanetas.style.backgroundColor = "#FB2576";
+    btnBuscarPlanetas.style.color = "white";
+});
+
+btnBuscarPlanetas.addEventListener("mouseout", () => {
+    btnBuscarPlanetas.style.backgroundColor = "";
+    btnBuscarPlanetas.style.color = "";
+});
 
 btnBuscarPlanetas.addEventListener("click", function () {
     let selectTipoExoplaneta = tipoExoplaneta.value;
@@ -57,3 +78,4 @@ function mostrarListaPlanetas(planetas) {
         listaPlanetas.appendChild(li);
     });
 }
+

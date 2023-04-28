@@ -7,9 +7,11 @@ function crearTablaUsuarios() {
     const filaCabecera = document.createElement('tr');
     const celdaNacion = document.createElement('th');
     const celdaNombre = document.createElement('th');
+    const celdaClase = document.createElement('th');
 
     celdaNacion.textContent = 'nacion';
     celdaNombre.textContent = 'Nombre';
+    celdaClase.textContent = `Clase`;
 
     filaCabecera.appendChild(celdaNacion);
     filaCabecera.appendChild(celdaNombre);
@@ -23,12 +25,15 @@ function crearTablaUsuarios() {
         const fila = document.createElement('tr');
         const celdaNacion = document.createElement('td');
         const celdaNombre = document.createElement('td');
+        const celdaClase = document.createElement(`td`);
 
         celdaNacion.textContent = usuario.nacion;
         celdaNombre.textContent = usuario.nombre;
+        celdaClase.textContent = 'Clases: ' + usuario.clase1 + ' explotador, ' + usuario.clase2 + ' ingeniero, ' + usuario.clase3 + ' politico';
 
         fila.appendChild(celdaNacion);
         fila.appendChild(celdaNombre);
+        fila.appendChild(celdaClase);
         cuerpo.appendChild(fila);
     });
 
