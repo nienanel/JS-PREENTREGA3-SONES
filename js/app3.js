@@ -32,6 +32,29 @@ btnBuscarPlanetas.addEventListener("click", function () {
     mostrarListaPlanetas(planetasFiltrados);
 });
 
+// Función para mostrar la lista de planetas
+function mostrarListaPlanetas(planetas) {
+    listaPlanetas.innerHTML = "";
+
+    if (planetas.length === 0) {
+        const li = document.createElement("li");
+        li.textContent = "No se encontraron resultados";
+        listaPlanetas.appendChild(li);
+        return;
+    }
+
+    planetas.forEach(planeta => {
+        const li = document.createElement("li");
+        const link = document.createElement("a");
+        link.textContent = planeta.nombre;
+        link.href = "#";
+        link.addEventListener("click", () => mostrarDatosPlaneta(planeta));
+        li.appendChild(link);
+        listaPlanetas.appendChild(li);
+    });
+}
+
+
 /// funcion para mostrar lista de planetas y navegar entre distintos objetos del array.
 function mostrarDatosPlaneta(planeta) {
     const modal = document.getElementById("myModal");
@@ -78,4 +101,10 @@ function mostrarListaPlanetas(planetas) {
         listaPlanetas.appendChild(li);
     });
 }
+
+
+
+
+
+
 
