@@ -1,6 +1,7 @@
 function mostrarInventario() {
     const inventario = obtenerInventario();
     const inventoryList = document.getElementById('inventory');
+    const linkInventario = document.getElementById('linkInventario');
     inventoryList.innerHTML = '';
 
     inventario.forEach(item => {
@@ -23,22 +24,14 @@ function mostrarInventario() {
     });
 
     // Verificar si el inventario no está vacío
-    if (inventario.length > 0) {
-        // Obtener el elemento del enlace del inventario
-        const linkInventario = document.getElementById("linkInventario");
-
-        // Agregar una clase CSS para cambiar el color a rojo
-        linkInventario.classList.add("inventarionovacio");
-    }
+    linkInventario.classList.toggle("inventarionovacio", inventario.length > 0);
 }
 
-// obtencion del inventario con JSON
 function obtenerInventario() {
     const inventarioJSON = localStorage.getItem('inventario');
     return inventarioJSON ? JSON.parse(inventarioJSON) : [];
 }
 
-// vaciado de inventario
 const venderTodoButton = document.getElementById('venderTodoButton');
 venderTodoButton.addEventListener('click', vaciarInventario);
 

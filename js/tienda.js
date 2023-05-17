@@ -40,8 +40,12 @@ function mostrarModal(item) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    mostrarTienda();
+});
+
 function mostrarTienda() {
-    const storeList = document.getElementById('store');
+    const storeList = document.getElementById("store");
     storeList.innerHTML = '';
 
     tienda.forEach(item => {

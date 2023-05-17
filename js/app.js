@@ -14,6 +14,10 @@ start.addEventListener('click', () => {
     tarjeta.style.display = 'block';
 });
 
+start.addEventListener(`mouseover`,() => {
+    start.style.color = `#FB2576`; 
+})
+
 enviar.addEventListener('click', guardarUsuario);
 
 salir.addEventListener('click', () => {
@@ -48,7 +52,6 @@ function guardarUsuario(event) {
     // Redirigir a la segunda página HTML
     window.location.href = '../html/home.html';
 }
-
 
 // Crear la tabla de usuarios
 function crearTablaUsuarios() {

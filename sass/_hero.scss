@@ -1,17 +1,11 @@
 .hero {
 
-    // background-color: rgba(0, 0, 0, 0.355);
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
     grid-template-areas: "hero" "footer";
     text-align: center;
     align-items: end;
-    // width: 80rem;
-    // height: 20rem;
-    // border: 1px solid lightgray;
-    // box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-    // border-radius: 15px;
 
     .titulo {
         grid-area: hero;
