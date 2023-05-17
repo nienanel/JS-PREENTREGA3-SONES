@@ -26,11 +26,14 @@ function crearTablaUsuarios() {
         const celdaNacion = document.createElement('td');
         const celdaNombre = document.createElement('td');
         const celdaClase = document.createElement(`td`);
+        const celdaExoplaneta = document.createElement('td');
 
         celdaNacion.textContent = usuario.nacion;
         celdaNombre.textContent = usuario.nombre;
         celdaClase.textContent = 'Clases: ' + usuario.clase1 + ' explotador, ' + usuario.clase2 + ' ingeniero, ' + usuario.clase3 + ' politico';
+        celdaExoplaneta.textContent = exoplanetaSeleccionado ? exoplanetaSeleccionado.nombre : '';
 
+        fila.appendChild(celdaExoplaneta);
         fila.appendChild(celdaNacion);
         fila.appendChild(celdaNombre);
         fila.appendChild(celdaClase);
@@ -43,4 +46,23 @@ function crearTablaUsuarios() {
 }
 
 // Generar la tabla al cargar la página
-document.addEventListener('DOMContentLoaded', crearTablaUsuarios);
+// document.addEventListener('DOMContentLoaded', crearTablaUsuarios);
+// Generar la tabla al cargar la página
+document.addEventListener('DOMContentLoaded', function () {
+    crearTablaUsuarios();
+
+    const listaPlanetas = document.getElementById('lista-planetas');
+
+    planetas.forEach(function (planeta) {
+        const li = document.createElement('li');
+        const link = document.createElement('a');
+        link.textContent = planeta.nombre;
+        link.href = '#';
+        link.addEventListener('click', function () {
+            mostrarDatosPlaneta(planeta);
+            agregarExoplanetaUsuario(planeta);
+        });
+        li.appendChild(link);
+        listaPlanetas.appendChild(li);
+    });
+});

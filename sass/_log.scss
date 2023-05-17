@@ -1,0 +1,48 @@
+.email-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.email-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.email-body {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.email-form {
+    margin-bottom: 20px;
+}
+
+.email-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.email-form input[type="text"],
+.email-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.email-form input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,4 +1,4 @@
-///regalo de bienvenida
+/// regalo de bienvenida
 const log = document.getElementById("log");
 
 log.addEventListener(`click`, (event) => {
@@ -15,8 +15,9 @@ log.addEventListener(`click`, (event) => {
             imageAlt: 'Custom image',
         }).then(() => {
             localStorage.setItem('modalShown', true);
-            agregarItemLog('Traje espacial');
-            agregarAlInventario('Traje espacial');
+            const trajeEspacial = { descripcion: 'Traje espacial', caracteristicas: 'Protección +100', imagen: '../img/item_traje.jpg' };
+            agregarItemLog(regalo.descripcion);
+            agregarAlInventario(trajeEspacial);
             window.open('inventario.html', '_blank', 'width=300,height=350');
         });
     } else {
@@ -34,9 +35,9 @@ function agregarItemLog(item) {
     log.appendChild(nuevoElemento);
 }
 
-function agregarAlInventario(item) {
+function agregarAlInventario(objeto) {
     const inventario = obtenerInventario();
-    inventario.push(item);
+    inventario.push(objeto);
     guardarInventario(inventario);
 }
 
